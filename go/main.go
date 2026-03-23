@@ -36,7 +36,7 @@ func randomUA() string {
     return userAgents[rand.Intn(len(userAgents))]
 }
 
-// submitForm POSTs fields to targetURL as application/x-www-form-urlencoded.
+// submitForm POSTs fields to targetURL as application/x-www-form-urlencoded
 // Returns (responseBody, statusCode, error).
 func submitForm(targetURL string, fields map[string]string) (string, int, error) {
     formData := url.Values{}
